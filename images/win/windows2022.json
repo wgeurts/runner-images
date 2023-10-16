@@ -24,7 +24,7 @@
         "install_user": "installer",
         "install_password": null,
         "managed_image_name": "packer-win22-dev",
-        "image_version": "dev",
+        "image_version": "20348.1129.221007",
         "image_os": "win22"
     },
     "sensitive-variables": [
