@@ -171,6 +171,7 @@ jobs:
   - ${{ if eq(parameters.create_release, true) }}:
     - task: PowerShell@2
       displayName: 'Create release for VM deployment'
+      enabled: false
       inputs:
         targetType: filePath
         filePath: ./images.CI/linux-and-win/create-release.ps1
