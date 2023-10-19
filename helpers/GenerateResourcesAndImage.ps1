@@ -142,7 +142,7 @@ Function GenerateResourcesAndImage {
         [ValidateSet("abort", "ask", "cleanup", "run-cleanup-provisioner")]
         [string] $OnError = "ask",
         [Parameter(Mandatory = $False)]
-        [hashtable] $Tags = @{ExcludeMdeAutoProvisioning = "True"}
+        [hashtable] $Tags = @{"ExcludeMdeAutoProvisioning" = "True"}
     )
 
     if ($Force -and $ReuseResourceGroup) {
